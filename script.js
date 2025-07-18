@@ -182,9 +182,12 @@ const init = {
     // (Rechte-Check in Browser anstoßen, Geräte-Liste geladen bekommen)
     navigator.mediaDevices.getUserMedia({ video: true })
       .then(camera.list)
-      .catch(() => {
-        alert ('Möglicherweise ist keine Kamera angeschlossen oder die Berechtigung für den Browser oder für diese Web-App fehlt.);
-      });
+      .catch(() => alert(
+        "Fehler. Möglicherweise:" +
+        "\n - ist keine Kamera angeschlossen" +
+        "\n - fehlt die Kamera-Berechtigung für den Browser" +
+        "\n - fehlt die Kamera-Berechtigung für diese Webseite"
+        ));
   },
 };
 
