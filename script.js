@@ -184,7 +184,7 @@ const init = {
       .then(camera.list)
       .catch(() => {
         alert ('Möglicherweise ist keine Kamera angeschlossen oder die Berechtigung für den Browser oder für diese Web-App fehlt.);
-      });;
+      });
   },
 };
 
