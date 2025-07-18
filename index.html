@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style src="style.css"></style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    
+    <button id="start" onclick="camera.start()" disabled>▶️</button>
+    <button id="stop" onclick="camera.stop()" disabled>⏹️</button>
+    <select name="cam-select" id="cam-select" disabled></select>
+    <button id="pause" onclick="timer.stop()" disabled>⏸️</button>
+
+    <video id="video" autoplay></video>
+    <canvas id="overlay"></canvas>
+
+    <div id="screens">
+      <a href="#" onclick="overlay.overlay(event)"><canvas></canvas></a>
+      <a href="#" onclick="overlay.overlay(event)"><canvas></canvas></a>
+      <a href="#" onclick="overlay.overlay(event)"><canvas></canvas></a>
+      <a href="#" onclick="overlay.overlay(event)"><canvas></canvas></a>
+      <a href="#" onclick="overlay.overlay(event)"><canvas></canvas></a>
+      <a href="#" onclick="overlay.overlay(event)"><canvas></canvas></a>
+      <a href="#" onclick="overlay.overlay(event)"><canvas></canvas></a>
+      <a href="#" onclick="overlay.overlay(event)"><canvas></canvas></a>
+    </div>
+
+  </body>
+</html>
