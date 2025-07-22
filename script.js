@@ -189,10 +189,11 @@ const init = {
     // (Rechte-Check in Browser anstoßen, Geräte-Liste geladen bekommen)
     navigator.mediaDevices.getUserMedia({ video: true })
       .then(camera.list)
-      .catch(() => alert(
-        "Es konnte nicht auf die Kamera zugegriffen werden."
+      .catch(() => alert(""
+        + "\nEs konnte nicht auf die Kamera zugegriffen werden."
         + "\n"
         + "\n Mögliche Fehlerursachen:"
+        + "\n"
         + "\n - es ist keine Kamera angeschlossen"
         + "\n - der Browser hat vom OS nicht die Berechtigung, auf die Kamera zuzugreifen"
         + "\n - die Webseite hat vom Browser nicht die Berechtigung, auf die Kamera zuzugreifen"
