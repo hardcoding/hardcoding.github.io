@@ -13,7 +13,8 @@ body {
 #start,
 #stop,
 #cam-select,
-#pause {
+#pause,
+#app-version {
   position: absolute;
   font-size: 10vh;
   margin-top: 1%;
