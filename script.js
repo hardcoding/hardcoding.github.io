@@ -193,8 +193,8 @@ const init = {
         + "Es konnte nicht auf die Kamera zugegriffen werden. Mögliche Fehlerursachen:"
         + "\n"
         + "\n - es ist keine Kamera angeschlossen"
-        + "\n - der Browser hat vom OS nicht die Berechtigung, auf die Kamera zuzugreifen"
-        + "\n - die Webseite hat vom Browser nicht die Berechtigung, auf die Kamera zuzugreifen"
+        + "\n - der Browser hat vom OS keine Kamera-Berechtigung"
+        + "\n - die Webseite hat vom Browser keine Kamera-Berechtigung"
         ));
   },
 };
