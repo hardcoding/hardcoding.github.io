@@ -180,7 +180,7 @@ const init = {
     domElements.pause = document.getElementById("pause");
     domElements.camSelect = document.getElementById("cam-select");
     domElements.screens = document.getElementsByTagName("canvas");
-    domElements.appVersion = document.getElementById("app-version").querySelector('span');
+    domElements.appVersion = document.getElementById("app-version");
 
     // Version anzeigen
     domElements.appVersion.innerHTML = config.appVersion;
