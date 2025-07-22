@@ -10,13 +10,6 @@ body {
   font-family: sans-serif;
 }
 
-#app-version {
-  position: absolute;
-  right: 1%;
-  bottom: 1%;
-  font-size: 5vh;
-}
-
 #start,
 #stop,
 #cam-select,
@@ -88,4 +81,13 @@ body {
 #screens a canvas {
   width: 100%;
   height: 100%;
+}
+
+#app-version{
+  right: 1%;
+  bottom: 1%;
+  font-size: 2vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
