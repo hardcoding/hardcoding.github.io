@@ -190,7 +190,7 @@ const init = {
     navigator.mediaDevices.getUserMedia({ video: true })
       .then(camera.list)
       .catch(() => alert(""
-        + "\nEs konnte nicht auf die Kamera zugegriffen werden."
+        + "Es konnte nicht auf die Kamera zugegriffen werden."
         + "\n"
         + "\n Mögliche Fehlerursachen:"
         + "\n"
