@@ -1,7 +1,7 @@
 "use strict";
 
 const config = {
-  appVersion: "2025-07-22 18:00",
+  appVersion: "v-20250722-1800",
   delay: 1000,
 };
 
