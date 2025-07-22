@@ -1,6 +1,7 @@
 "use strict";
 
 const config = {
+  appVersion: 1,
   delay: 1000,
 };
 
@@ -179,6 +180,10 @@ const init = {
     domElements.pause = document.getElementById("pause");
     domElements.camSelect = document.getElementById("cam-select");
     domElements.screens = document.getElementsByTagName("canvas");
+    domElements.appVersion = document.getElementById("app-version").querySelector('span');
+
+    // Version anzeigen
+    domElements.appVersion.innerHTML = config.appVersion;
 
     // Video-Input initialisieren
     // (Rechte-Check in Browser anstoßen, Geräte-Liste geladen bekommen)
