@@ -147,7 +147,9 @@ const camera = {
 const init = {
   checkBrowser: () => {
     const isSecureContext = window.isSecureContext;
-    const isNewJS = typeof String.prototype.isWellFormed === "function";
+
+    const isNewJS = typeof String.prototype.replaceAll === "function"; // JS 2021
+    // const isNewJS = typeof String.prototype.isWellFormed === "function"; // JS 2024
 
     if (!isSecureContext || !isNewJS) {
       const message =
