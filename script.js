@@ -185,10 +185,11 @@ const init = {
     navigator.mediaDevices.getUserMedia({ video: true })
       .then(camera.list)
       .catch(() => alert(
-        "Fehler. Möglicherweise:" +
-        "\n - ist keine Kamera angeschlossen" +
-        "\n - fehlt die Kamera-Berechtigung für den Browser" +
-        "\n - fehlt die Kamera-Berechtigung für diese Webseite"
+        "Es konnte nicht auf die Kamera zugegriffen werden."
+        + "\n Mögliche Fehlerursachen:" +
+        + "\n - es ist keine Kamera angeschlossen"
+        + "\n - der Browser hat vom OS nicht die Berechtigung, auf die Kamera zuzugreifen"
+        + "\n - die Webseite hat vom Browser nicht die Berechtigung, auf die Kamera zuzugreifen"
         ));
   },
 };
