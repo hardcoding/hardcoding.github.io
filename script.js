@@ -1,7 +1,7 @@
 "use strict";
 
 const config = {
-  appVersion: 1,
+  appVersion: "2025-07-22 18:00",
   delay: 1000,
 };
 
@@ -190,9 +190,7 @@ const init = {
     navigator.mediaDevices.getUserMedia({ video: true })
       .then(camera.list)
       .catch(() => alert(""
-        + "Es konnte nicht auf die Kamera zugegriffen werden."
-        + "\n"
-        + "\n Mögliche Fehlerursachen:"
+        + "Es konnte nicht auf die Kamera zugegriffen werden. Mögliche Fehlerursachen:"
         + "\n"
         + "\n - es ist keine Kamera angeschlossen"
         + "\n - der Browser hat vom OS nicht die Berechtigung, auf die Kamera zuzugreifen"
